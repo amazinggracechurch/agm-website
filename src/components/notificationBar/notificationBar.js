@@ -4,7 +4,9 @@ import './notificationBar.css'
 export default function notificationBar() {
   return (
     <>
-        <p>info@amazinggraceministries.net</p>
+        <div className="strip">
+            <p>info@amazinggraceministries.net</p>
+        </div>
     </>
   )
 };
