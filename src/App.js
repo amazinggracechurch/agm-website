@@ -1,9 +1,15 @@
-import './App.css';
+import './app.css';
+import Notifications from './components/notificationBar/notificationBar'
+import HomePage from './components/routes/homepage';
 
-function App() {
+export default function App() {
   return (
-    <div className="App" />
-  );
-}
+    <div className="App">
+      <div className="body">
+          <Notifications/>
+          <HomePage />
+      </div>
+    </div>
 
-export default App;
+  );
+};
