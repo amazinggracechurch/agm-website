@@ -1,9 +1,12 @@
-import './App.css';
+import './app.css';
+import Notifications from './components/notificationBar/notificationBar'
+import HomePage from './components/routes/homepage';
 
-function App() {
-  return (
-    <div className="App" />
-  );
-}
-
-export default App;
+export default function App() {
+    return (
+        <div className="App">
+          <Notifications/>
+          <HomePage />
+        </div>
+    );
+};
