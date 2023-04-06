@@ -5,7 +5,7 @@ export default function HomePage( props ) {
     return(
         <>
             <section>
-                <h1>{ block.name }</h1>
+                <h1>{ block.nameUppercase }</h1>
             </section>
         </>
     )
