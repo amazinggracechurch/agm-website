@@ -14,13 +14,19 @@ export default function HomePage( props ) {
             <div className="half-section">
                 <div className="blue-card">
                     <div className="grid">
-                        <h3>{ declaration.map( declaration => declaration.title )}</h3>
+                        <h3>{ declaration[ 0 ].title }</h3>
+                        <p>{ declaration[ 0 ].message }</p>
                     </div>
                     <div className="grid">
-                        <h3>{ declaration.map( declaration => declaration.title )}</h3>
+                        <h3>{ declaration[ 1 ].title }</h3>
+                        <p>{ declaration[ 1 ].message }</p>
                     </div>
                 </div>
             </div>
+            <section className="centered-section">
+                <p>watch our services online</p>
+                <h3>Recent Sermons</h3>
+            </section>
         </>
     );
 } 
