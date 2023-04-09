@@ -5,8 +5,15 @@ export default function HomePage( props ) {
     return(
         <>
             <section>
-                <h1>{ block.nameUppercase }</h1>
+                <div className="main-img">
+                    <h1>{ block.nameUppercase }</h1>
+                </div>
             </section>
+            <div className="half-section">
+                <div className="blue-card">
+                    
+                </div>
+            </div>
         </>
     )
 }; 

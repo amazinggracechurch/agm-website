@@ -21,3 +21,10 @@ p {
     line-height: 28px;
     font-weight: 400;
 }
+
+.half-section {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

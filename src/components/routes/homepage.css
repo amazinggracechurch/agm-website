@@ -1,0 +1,10 @@
+.main-img {
+    background-image: url( 'https://unsplash.com/photos/E0AHdsENmDg' );
+}
+
+.blue-card {
+    background-color: rgb(45, 74, 192);
+    opacity: 10%;
+    margin: 10em;
+    padding: 10em;
+}

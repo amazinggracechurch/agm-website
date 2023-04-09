@@ -44,6 +44,5 @@
         "semi": "error",
         "curly": "error",
         "template-curly-spacing": [ "error", "always" ]
-
     }
-  }
+}
