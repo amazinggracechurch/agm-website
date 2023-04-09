@@ -7,17 +7,38 @@
 
 section {
     height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 64px;
+    color: #FFFFFF
+}
+
+h3 {
+    color: #1F4AE3;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 3;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 200;
+    color: #75777D;
+}
+
+.half-section {
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1 {
-    font-size: 64px;
-}
-
-p {
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 400;
+.centered-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
