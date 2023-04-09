@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../footer/footer';
 import block from '../../data/church.json';
 import declaration from '../../data/declaration.json';
 import './homepage.css';
@@ -27,6 +28,7 @@ export default function HomePage( props ) {
                 <p>watch our services online</p>
                 <h3>Recent Sermons</h3>
             </section>
+            <Footer />
         </>
     );
 } 
