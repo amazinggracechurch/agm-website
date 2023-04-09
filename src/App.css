@@ -19,7 +19,7 @@ h3 {
     color: #1F4AE3;
     font-size: 24px;
     font-weight: 600;
-    line-height: 3;
+    line-height: 2;
 }
 
 p {
@@ -30,7 +30,7 @@ p {
 }
 
 .half-section {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
