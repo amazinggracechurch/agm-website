@@ -1,10 +1,18 @@
 [
     {
         "url": "info@amazinggraceministries.net",
-        "type": "email"
+        "type": "email us"
     },
     {
         "type": "facebook",
         "url": "http://www.facebook.com"
+    },
+    {
+        "type": "youtube",
+        "url": "http://www.youtube.com"
+    },
+    {
+        "type": "shop",
+        "url": "http://www.aggospel.net"
     }
 ]

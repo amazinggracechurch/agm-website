@@ -16,6 +16,10 @@
     justify-content: space-between;
 }
 
+.blue-card h3 {
+    color: #1F4AE3;
+}
+
 .grid {
     width: 50%;
     padding: 3em;
