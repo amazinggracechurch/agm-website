@@ -9,9 +9,19 @@ export default function HomePage( props ) {
         <>
             <section>
                 <div className="main-img">
+                    <div className="nav">
+                        <ul>
+                            <li><p>About</p></li>
+                            <li><p>Ministries</p></li>
+                        </ul>
+                        <ul>
+                            <li><p>Resources</p></li>
+                            <li><p>Give</p></li>
+                        </ul>
+                    </div>
                     <h3>WELCOME</h3>
                     <h1>{ block.nameUppercase }</h1>
-                    <h3>{ block.location }</h3>
+                    <h3>{ block.locationUppercase }</h3>
                 </div>
             </section>
             <div className="half-section">
