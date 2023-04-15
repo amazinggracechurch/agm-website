@@ -1,12 +1,21 @@
 .main-img {
-    background-image: url( '../../../public/assets/asset-1.jpg' );
-    object-fit: contain;
+    background-image: url( '../../../public//assets/asset-1.jpg' );
+    background-size: cover;
+    object-fit: center;
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
 
+.main-img h1 {
+    white-space: pre;
+}
+
+.main-img h3 {
+    color: #FFFFFF;
 }
 
 .blue-card {

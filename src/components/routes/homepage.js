@@ -9,19 +9,19 @@ export default function HomePage( props ) {
         <>
             <section>
                 <div className="main-img">
+                    <h3>WELCOME</h3>
                     <h1>{ block.nameUppercase }</h1>
+                    <h3>{ block.location }</h3>
                 </div>
             </section>
             <div className="half-section">
                 <div className="blue-card">
-                    <div className="grid">
-                        <h3>{ declaration[ 0 ].title }</h3>
-                        <p>{ declaration[ 0 ].message }</p>
-                    </div>
-                    <div className="grid">
-                        <h3>{ declaration[ 1 ].title }</h3>
-                        <p>{ declaration[ 1 ].message }</p>
-                    </div>
+                    { declaration.map( ( { title, message }, index ) => (
+                        <div className="grid" key={ index }>
+                            <h3>{ title }</h3>
+                            <p>{ message }</p>
+                        </div>
+                    ) ) }
                 </div>
             </div>
             <section className="centered-section">
