@@ -12,11 +12,11 @@ export default function footer() {
             </div>
             <div className="grid">
                 <h3>Additional Links</h3>
-                {links.map( ( { url, type } ) => (
+                { links.map( ( { url, type } ) => (
                   <a href={ url } key={ type }>
                     { type }
                   </a>
-                ) )}
+                ) ) }
             </div>
           </div>
         </div>
