@@ -4,18 +4,25 @@
     object-fit: center;
     height: 100%;
     width: 100%;
+    z-index: -1;
+}
+
+.tint {
+    background-color: rgba(33, 75, 228, 0.2);
+    z-index: -1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index: -1;
+    height: 100%;
+    width: 100%;
 }
 
-.main-img h1 {
+.tint h1 {
     white-space: pre;
 }
 
-.main-img h3 {
+.tint h3 {
     color: #FFFFFF;
 }
 
@@ -48,7 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space;
-    align-items: end;
+    align-items: flex-end;
     padding: 60px;
 }
 
@@ -66,4 +73,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.giving-section {
+    background-color: #EAEDF9;
+    display: flex;
+}
+
+.giving-section img {
+    width: 60%;
+}
+
+.give {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+    padding: 5em;
+}
+
+.give h3 {
+    color: #1F4AE3;
+    justify-self: flex-start;
 }
