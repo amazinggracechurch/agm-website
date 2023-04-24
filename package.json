@@ -13,6 +13,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "lint": "eslint -c .eslintrc './src/**/*.js*' --ignore-pattern '*.json' --ignore-pattern '*.snap'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
