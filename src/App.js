@@ -1,5 +1,5 @@
 import './app.css';
-import Notifications from './components/notificationBar/notificationBar'
+import Notifications from './components/notificationBar/notificationBar';
 import HomePage from './components/routes/homepage';
 
 export default function App() {
@@ -9,4 +9,4 @@ export default function App() {
           <HomePage />
         </div>
     );
-};
+}
