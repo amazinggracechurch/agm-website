@@ -50,6 +50,10 @@ a {
     justify-content: center;
 }
 
+.centered-section h3 {
+    color: #1F4AE3;
+}
+
 .red-button {
     background-color: red;
     padding: 1em;
