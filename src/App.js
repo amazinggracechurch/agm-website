@@ -1,4 +1,4 @@
-import './App.css';
+import './app.css';
 import Notifications from './components/notificationBar/notificationBar';
 import HomePage from './components/routes/homepage';
 
