@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../footer/footer';
 import block from '../../data/church.json';
 import give from '../../data/give.json';
-import declaration from '../../data/declaration.json';
+import mission from '../../data/mission.json';
 import './homepage.css';
 import house from '../../assets/asset-3.jpg';
 
@@ -30,7 +30,7 @@ export default function HomePage( props ) {
             </section>
             <div className="half-section">
                 <div className="blue-card">
-                    { declaration.map( ( { title, message }, index ) => (
+                    { mission.map( ( { title, message }, index ) => (
                         <div className="grid" key={ index }>
                             <h3>{ title }</h3>
                             <p>{ message }</p>
