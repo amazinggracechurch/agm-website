@@ -1,12 +1,16 @@
 import React from 'react';
 import './notificationBar.css';
-import email from '../../data/links.json';
+import notification from '../../data/links.json';
 
 export default function notificationBar() {
+  
   return (
     <>
         <div className="strip">
-            <p>{ email[ 0 ].url }</p>
+          <div className="marquee-container">
+            <p className="marquee-item">{ notification[ 0 ].url }</p>
+            <p className="marquee-item">{ notification[ 5 ].value }</p>
+          </div>
         </div>
     </>
   );

@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #c7c7c7;
     position: fixed;
+    overflow: hidden; /* Hides the overflow of the strip */
 }
 
 .strip p {
@@ -9,3 +10,19 @@
     color: #000000;
     padding: 5px;
 }
+
+.marquee-container {
+    display: flex; /* Displays the <p> tags in a row */
+    animation: marquee 20s linear infinite; /* Animation properties */
+    gap: 20px; /* Adds space between <p> tags */
+}
+
+.marquee-item {
+    flex-shrink: 0; /* Prevents the <p> tags from shrinking */
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); } /* Initial position */
+    100% { transform: translateX(-100%); } /* Final position */
+  }
