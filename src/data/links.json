@@ -1,7 +1,7 @@
 [
     {
-        "url": "info@amazinggracemn.org",
-        "type": "email us"
+        "email": "info@amazinggracemn.org",
+        "type": "email"
     },
     {
         "type": "facebook",
