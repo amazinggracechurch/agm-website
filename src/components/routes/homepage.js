@@ -7,6 +7,9 @@ import './homepage.css';
 import house from '../../assets/asset-3.jpg';
 
 export default function HomePage( props ) {
+
+    const parts = block.nameUppercase.split( ' GRACE ' );
+
     return (
         <>
             <section>
@@ -23,7 +26,14 @@ export default function HomePage( props ) {
                             </ul>
                         </div>
                         <h3>WELCOME</h3>
-                        <h1>{ block.nameUppercase }</h1>
+                        <h1 style={ { textAlign: 'center' } }>
+                            { parts.map( ( part, index ) => (
+                                <h1 key={index}>
+                                    {part}
+                                    { index !== parts.length - 1 && ' GRACE ' }
+                                </h1>
+                            ) ) }
+                        </h1>
                         <h3>{ block.locationUppercase }</h3>
                     </div>
                 </div>
