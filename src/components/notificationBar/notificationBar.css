@@ -13,13 +13,15 @@
 
 .marquee-container {
     display: flex; /* Displays the <p> tags in a row */
-    animation: marquee 20s linear infinite; /* Animation properties */
+    animation: marquee 50s linear infinite; /* Animation properties */
     gap: 20px; /* Adds space between <p> tags */
 }
 
 .marquee-item {
     flex-shrink: 0; /* Prevents the <p> tags from shrinking */
     white-space: nowrap; /* Prevents line breaks */
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 @keyframes marquee {
