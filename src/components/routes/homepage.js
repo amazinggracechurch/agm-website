@@ -6,6 +6,7 @@ import mission from '../../data/mission.json';
 import './homepage.css';
 import house from '../../assets/asset-3.jpg';
 import YouTubeLivestreams from '../stream/recentSermons';
+import Nav from '../nav/nav';
 
 export default function HomePage( props ) {
 
@@ -16,16 +17,7 @@ export default function HomePage( props ) {
             <section>
                 <div className="main-img">
                     <div className="tint">
-                        <div className="nav">
-                            <ul>
-                                <li><p>About</p></li>
-                                <li><p>Ministries</p></li>
-                            </ul>
-                            <ul>
-                                <li><p>Resources</p></li>
-                                <li><p>Give</p></li>
-                            </ul>
-                        </div>
+                    <Nav />
                         <h3>WELCOME</h3>
                         <h1 style={ { textAlign: 'center' } }>
                             { parts.map( ( part, index ) => (
