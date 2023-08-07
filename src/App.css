@@ -67,6 +67,14 @@ a {
     transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
 }
 
+.video-container {
+    margin: 10px;
+    background-color: red;
+    border: 0;
+    height: 280px;
+    width: 412px;
+}
+
 .red-button:hover {
     animation: pulse 1.5s infinite; /* Add animation property on hover */
   }
@@ -81,5 +89,5 @@ a {
     100% {
       transform: scale(1);
     }
-  }
+}
 
