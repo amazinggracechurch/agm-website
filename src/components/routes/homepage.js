@@ -5,6 +5,7 @@ import give from '../../data/give.json';
 import mission from '../../data/mission.json';
 import './homepage.css';
 import house from '../../assets/asset-3.jpg';
+import YouTubeLivestreams from '../stream/recentSermons';
 
 export default function HomePage( props ) {
 
@@ -28,8 +29,8 @@ export default function HomePage( props ) {
                         <h3>WELCOME</h3>
                         <h1 style={ { textAlign: 'center' } }>
                             { parts.map( ( part, index ) => (
-                                <h1 key={index}>
-                                    {part}
+                                <h1 key={ index }>
+                                    { part }
                                     { index !== parts.length - 1 && ' GRACE ' }
                                 </h1>
                             ) ) }
@@ -51,6 +52,7 @@ export default function HomePage( props ) {
             <section className="centered-section">
                 <p>watch our services online</p>
                 <h3>Recent Sermons</h3>
+                <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </section>
             <section className="giving-section">
                 <img src={ house } alt="house"/>
