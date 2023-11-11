@@ -1,12 +1,16 @@
 import './app.css';
-import Notifications from './components/notificationBar/notificationBar';
+import NotificationBar from './components/notificationBar/notificationBar';
 import HomePage from './components/routes/homepage';
+import Nav from './components/nav/nav';
 
 export default function App() {
     return (
+      <>
+        <NotificationBar/>
+        <Nav />
         <div className="App">
-          <Notifications/>
           <HomePage />
         </div>
+      </>
     );
 }
