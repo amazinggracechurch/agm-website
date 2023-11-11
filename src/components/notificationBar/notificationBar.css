@@ -1,13 +1,16 @@
+/* notificationBar.css */
 .strip {
     width: 100%;
     background-color: #c7c7c7;
+    color: #000000;
     position: fixed;
-    overflow: hidden; /* Hides the overflow of the strip */
+    top: 0; /* Ensures the strip is always at the top */
+    z-index: 9999; /* Keeps the strip above other elements */
+    overflow: hidden;
 }
 
 .strip p {
     font-size: 14px;
-    color: #000000;
     padding: 5px;
 }
 
@@ -27,4 +30,14 @@
 @keyframes marquee {
     0% { transform: translateX(100%); } /* Initial position */
     100% { transform: translateX(-100%); } /* Final position */
-  }
+}
+
+@media (max-width: 600px) {
+    .strip {
+      font-size: 12px; /* Smaller font size for smaller screens */
+    }
+  
+    .strip p {
+      padding: 3px; /* Smaller padding */
+    }
+}
