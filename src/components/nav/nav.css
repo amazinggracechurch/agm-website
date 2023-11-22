@@ -1,12 +1,15 @@
 .nav {
-    /* background-color: red; */
-    width: 100%;
-    display: flex;
-    justify-content:space-around;
+    position: absolute;
     top: 50px;
     z-index: 10;
-    position: relative;
-    /* padding: 1em; */
+    width: 90%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 30px;
+    border: 1px solid #1F4AE3;
 }
 
 .nav ul {
