@@ -37,63 +37,15 @@ a {
 }
 
 .half-section {
-    min-height: 50vh;
-    display: flex;
+    padding: 2em;
+    /* margin: 2em auto; */
+    border-radius: 20px; /* rounded corners */
+    display: flex; /* flex layout */
+    justify-content: space-around; /* adjust as needed */
     align-items: center;
-    justify-content: center;
 }
 
 .half-section h3 {
     border-radius: 15px;
-    padding: 0 0.5em 0 0.5em;
-    border: 1px solid blue;
-}
-
-.centered-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.centered-section h3 {
-    color: #1F4AE3;
-}
-
-.red-button {
-    background-color: red;
-    padding: 1em;
-    font-size: 18px;
-    font-weight: 200;
-    text-align: center;
-    margin-top: 20px;
-    color: #FFFFFF;
-    width: 215px;
-    position: relative;
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
-}
-
-.video-container {
-    margin: 10px;
-    background-color: red;
-    border: 0;
-    height: 280px;
-    width: 412px;
-}
-
-.red-button:hover {
-    animation: pulse 1.5s infinite; /* Add animation property on hover */
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1); /* Adjust scale value as desired */
-    }
-    100% {
-      transform: scale(1);
-    }
 }
 

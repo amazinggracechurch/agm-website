@@ -9,7 +9,9 @@
     justify-content: space-around;
     padding: 10px 0;
     border-radius: 30px;
-    border: 1px solid #1F4AE3;
+    background: rgba(255, 255, 255, 0.2); /* semi-transparent white background */
+    backdrop-filter: blur(5px); /* blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* optional: border with transparency */
 }
 
 .nav ul {
@@ -27,15 +29,32 @@
 }
 
 .nav p button {
-    color: #1F4AE3;
+    font-size: 1em;
+    font-weight: 300;
     background: none;
-    font-size: 1.1em;
-    font-weight: 400;
-    transition: all 0.3s ease;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    position: relative;
+    transition: text-shadow 0.3s ease;
 }
 
 .nav button:hover {
-    border-radius: 15px;
-    padding: 0 1em;
-    border: 1px solid blue;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* subtle glow */
+}
+
+.nav button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.nav button:hover::after {
+    width: 100%;
+    left: 0;
 }
