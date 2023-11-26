@@ -44,11 +44,10 @@ export default function HomePage( props ) {
                 </div>
             </div>
             
-            <section className="centered-section">
-                <p>watch our services online</p>
-                <h3>Recent Sermons</h3>
+            <div className="sermon-section">
+                {/* <p>watch our services online</p> */}
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
-            </section>
+            </div>
             <section className="giving-section">
                 <img src={ house } alt="house"/>
                 <div className="give">
