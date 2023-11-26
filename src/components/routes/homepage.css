@@ -83,14 +83,15 @@
     justify-self: flex-start;
 }
 
-.centered-section {
+.sermon-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    padding: 0 5em 5em 5em;
     justify-content: center;
 }
 
-.centered-section h3 {
+.sermon-section h3 {
     color: #1F4AE3;
 }
 
@@ -105,14 +106,6 @@
     width: 215px;
     position: relative;
     transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
-}
-
-.video-container {
-    margin: 10px;
-    background-color: red;
-    border: 0;
-    height: 280px;
-    width: 412px;
 }
 
 .red-button:hover {
