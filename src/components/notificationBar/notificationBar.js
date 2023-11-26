@@ -13,13 +13,13 @@ export default function notificationBar() {
             </p>
           ) ) }
           { notification.map( ( item, index ) => (
-            <p key={index} className="marquee-item">
+            <p key={ index } className="marquee-item">
               {item.type === 'announcement' ? item.value : item.email }
             </p>
           ) ) }
           { notification.map( ( item, index ) => (
-            <p key={index} className="marquee-item">
-              {item.type === 'announcement' ? item.value : item.email }
+            <p key={ index } className="marquee-item">
+              { item.type === 'announcement' ? item.value : item.email }
             </p>
           ) ) }
         </div>
