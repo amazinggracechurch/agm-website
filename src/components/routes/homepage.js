@@ -4,13 +4,17 @@ import block from '../../data/church.json';
 import give from '../../data/give.json';
 import mission from '../../data/mission.json';
 import './homepage.css';
-import house from '../../assets/asset-3.jpg';
+import house from '../../assets/asset-4.jpg';
 import YouTubeLivestreams from '../stream/recentSermons';
 import Nav from '../nav/nav';
 
 export default function HomePage( props ) {
 
     const parts = block.nameUppercase.split( ' GRACE ' );
+
+    function redirectToGiveUrl() {
+        window.open( give.url, '_blank' );
+    }
 
     return (
         <>
@@ -45,17 +49,19 @@ export default function HomePage( props ) {
             </div>
             
             <div className="sermon-section">
-                {/* <p>watch our services online</p> */}
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </div>
-            <section className="giving-section">
-                <img src={ house } alt="house"/>
-                <div className="give">
-                    <h3>Give securely</h3>
-                    <p>{ give.message }</p>
-                    <a href={ give.url } class="red-button">Give</a>
+            <div className="giving-section">
+                <div className="image-container">
+                    <img src={ house } alt="house"/>
+                    <div className="overlay">
+                        <div className="give">
+                            <p>{ give.message }</p>
+                            <button onClick={ redirectToGiveUrl } class="main-button">Give</button>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
             <Footer />
         </>
     );

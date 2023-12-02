@@ -58,28 +58,45 @@
     justify-content: flex-start;
 }
 
-.giving-section {
-    background-color: #EAEDF9;
-    display: flex;
+.giving-section .image-container {
+    position: relative;
+    display: inline-block;
 }
 
 .giving-section img {
-    width: 60%;
+    width: calc(100vw - 40px);
+    height: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    display: block;
+}
+
+.giving-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    height: calc(100% - 40px);
+    width: 750px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    background-color: #4B5F85;
+    display: flex;
+    align-items: center;
 }
 
 .give {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: flex-start;
-    justify-content: center;
     text-align: left;
-    width: 100%;
     padding: 4em;
+    /* background-color: red; */
 }
 
-.give h3 {
-    color: #1F4AE3;
+.give p {
+    color: #fff;
     justify-self: flex-start;
 }
 
@@ -93,34 +110,5 @@
 
 .sermon-section h3 {
     color: #1F4AE3;
-}
-
-.red-button {
-    background-color: red;
-    padding: 1em;
-    font-size: 18px;
-    font-weight: 200;
-    text-align: center;
-    margin-top: 20px;
-    color: #FFFFFF;
-    width: 215px;
-    position: relative;
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
-}
-
-.red-button:hover {
-    animation: pulse 1.5s infinite; /* Add animation property on hover */
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1); /* Adjust scale value as desired */
-    }
-    100% {
-      transform: scale(1);
-    }
 }
 

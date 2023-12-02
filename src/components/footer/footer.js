@@ -5,8 +5,8 @@ import './footer.css';
 export default function Footer() {
   return (
     <div className="footer">
-      <h3>Amazing Grace Ministries</h3>
-      <p>the headquarters of God in Minnesota</p>
+      <h1>Amazing Grace Ministries</h1>
+      {/* <p>the headquarters of God in Minnesota</p> */}
       <div className="footer-links">
         { links.map( ( { url, type } ) => (
           <a href={ url } key={ type }>{ type }</a>
