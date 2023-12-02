@@ -4,12 +4,22 @@
     height: 250px;
     width: 312px;
     border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.video-container:hover {
+    transform: translateY(-5px);
 }
 
 .featured-video-container {
     width: 100%;
     height: 600px;
     border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.featured-video-container:hover {
+    transform: translateY(-5px);
 }
 
 /* Add this new class for the container */
@@ -29,6 +39,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 15;
     background-color: #FFF;
     border: none;
     cursor: pointer;
