@@ -112,3 +112,11 @@
     color: #1F4AE3;
 }
 
+@media screen and ( max-width: 600px ) {
+    .blue-card {
+        flex-direction: column;
+    }
+    .giving-section .overlay{
+        width: 50%;
+    }
+}
