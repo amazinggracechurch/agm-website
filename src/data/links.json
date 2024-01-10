@@ -1,7 +1,7 @@
 [
     {
         "email": "info@amazinggracemn.org",
-        "type": "email"
+        "type": "e-mail"
     },
     {
         "type": "facebook",
@@ -13,14 +13,10 @@
     },
     {
         "type": "shop",
-        "url": "http://www.aggospel.net"
+        "url": "http://www.amazinggracemn.org"
     },
     {
         "type": "give",
         "url": "https://secure.anedot.com/amazing-grace-full-gospel/a109d520-447b-48c0-beff-fb7d8edb91e7"
-    },
-    {
-        "type": "announcement",
-        "value": "site is still under development"
     }
 ]
