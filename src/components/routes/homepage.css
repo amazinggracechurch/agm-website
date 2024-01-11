@@ -19,22 +19,9 @@
     background-color: rgba(33, 75, 228, 0.2);
 }
 
-.tint h1 {
-    font-size: 72px;
-    white-space: pre;
-    z-index: 1;
-}
-
 .tint h3 {
     color: #FFFFFF;
-    z-index: 1;
-}
-
-.center-element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
+    /* z-index: 1; */
 }
 
 .blue-card {
@@ -64,7 +51,7 @@
 }
 
 .giving-section img {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 60px);
     height: 300px;
     margin: 20px;
     border-radius: 15px;
