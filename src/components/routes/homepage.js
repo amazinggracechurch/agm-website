@@ -18,12 +18,10 @@ export default function HomePage( props ) {
 
     return (
         <>
+            <Nav />
             <section>
-                <div className="center-element">
-                    <Nav />
-                </div>
                 <div className="main-img">
-                    <div className="tint">
+                <div className="tint">
                         <h1 style={ { textAlign: 'center' } }>
                             { parts.map( ( part, index ) => (
                                 <h1 key={ index }>
@@ -57,7 +55,7 @@ export default function HomePage( props ) {
                     <div className="overlay">
                         <div className="give">
                             <p>{ give.message }</p>
-                            <button onClick={ redirectToGiveUrl } class="main-button">Give</button>
+                            <button onClick={ redirectToGiveUrl } className="main-button">Give</button>
                         </div>
                     </div>
                 </div>

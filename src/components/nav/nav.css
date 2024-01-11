@@ -1,13 +1,15 @@
-.nav {
-    position: absolute;
-    top: 50px;
-    z-index: 10;
-    width: 90%;
-    margin: 0 20px;
+.nav-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding: 10px 0;
+    justify-content: center;
+    position: absolute;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.nav {
+    padding: 10px 50px;
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.2); /* semi-transparent white background */
     backdrop-filter: blur(5px); /* blur effect */
@@ -57,4 +59,73 @@
 .nav button:hover::after {
     width: 100%;
     left: 0;
+}
+
+
+
+
+
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    border-radius: 50%; /* Circle shape */
+    /* background: rgba(255, 255, 255, 0.2); Glassmorphic style */
+    /* backdrop-filter: blur(5px); */
+    padding: 10px; /* Adjust as needed */
+    position: relative;
+    z-index: 11;
+}
+
+.hamburger-menu .bar {
+    width: 25px; /* Adjust as needed */
+    height: 2px; /* Adjust as needed */
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Responsive Nav */
+@media (max-width: 600px) {
+    .hamburger-menu {
+        display: block; /* Show hamburger menu */
+    }
+
+    .nav-container{
+        align-items: end;
+    }
+
+    .nav {
+        padding: 0 10px 0 0;
+        width: auto;
+    }
+
+    .nav ul {
+        position: fixed;
+        top: 0;
+        right: -700%; /* Hide off-screen */
+        width: 300px; /* Adjust as needed */
+        height: 100vh;
+        background-color: darkgrey;
+        flex-direction: column;
+        align-items: start;
+        transition: right 0.3s;
+        padding-top: 60px; /* Adjust as needed */
+    }
+
+    .nav ul li {
+        padding: 10px; /* Adjust as needed */
+    }
+
+    .nav ul li button {
+        color: white;
+        text-align: left;
+    }
+}
+
+/* Additional styles when menu is active */
+.nav ul.active {
+    right: 0; /* Bring into view */
 }
