@@ -19,9 +19,25 @@
     background-color: rgba(33, 75, 228, 0.2);
 }
 
+.tint span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .tint h3 {
     color: #FFFFFF;
     /* z-index: 1; */
+}
+
+.button-stack .main-btn-outline {
+    margin: 20px;
+}
+
+.button-stack .main-btn-filled {
+    margin: 20px;
 }
 
 .blue-card {
@@ -103,7 +119,14 @@
     .blue-card {
         flex-direction: column;
     }
-    .giving-section .overlay{
+    .giving-section .overlay {
         width: 50%;
+    }
+    .button-stack .main-btn-outline {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px;
     }
 }

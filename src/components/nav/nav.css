@@ -105,8 +105,8 @@
     .nav ul {
         position: fixed;
         top: 0;
-        right: -700%; /* Hide off-screen */
-        width: 300px; /* Adjust as needed */
+        right: -100vw; /* Hide off-screen */
+        width: 100vw; /* Adjust as needed */
         height: 100vh;
         background-color: darkgrey;
         flex-direction: column;

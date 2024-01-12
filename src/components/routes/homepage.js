@@ -12,25 +12,31 @@ export default function HomePage( props ) {
 
     const parts = block.nameUppercase.split( ' GRACE ' );
 
-    function redirectToGiveUrl() {
+    const redirectToGiveUrl = () => {
         window.open( give.url, '_blank' );
-    }
+    };
 
     return (
         <>
             <Nav />
             <section>
                 <div className="main-img">
-                <div className="tint">
-                        <h1 style={ { textAlign: 'center' } }>
-                            { parts.map( ( part, index ) => (
-                                <h1 key={ index }>
-                                    { part }
-                                    { index !== parts.length - 1 && ' GRACE ' }
-                                </h1>
-                            ) ) }
-                        </h1>
-                        <h3>{ block.locationUppercase }</h3>
+                    <div className="tint">
+                        <span>
+                            <h1 style={ { textAlign: 'center' } }>
+                                { parts.map( ( part, index ) => (
+                                    <h1 key={ index }>
+                                        { part }
+                                        { index !== parts.length - 1 && ' GRACE ' }
+                                    </h1>
+                                ) ) }
+                            </h1>
+                            <h3>{ block.locationUppercase }</h3>
+                        </span>
+                        <div className="button-stack">
+                            <button className="main-btn-filled">Latest Sermon</button>
+                            <button className="main-btn-outline">Upcoming events</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -55,7 +61,7 @@ export default function HomePage( props ) {
                     <div className="overlay">
                         <div className="give">
                             <p>{ give.message }</p>
-                            <button onClick={ redirectToGiveUrl } className="main-button">Give</button>
+                            <button onClick={ redirectToGiveUrl } className="main-btn-outline">Give</button>
                         </div>
                     </div>
                 </div>
