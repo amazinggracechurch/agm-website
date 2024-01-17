@@ -1,12 +1,14 @@
 import React from 'react';
+import Nav from '../nav/nav';
 import Footer from '../footer/footer';
+import UpcomingEventsView from '../upcomingEvents/upcomingEventsView';
+import YouTubeLivestreams from '../stream/recentSermons';
 import block from '../../data/church.json';
 import give from '../../data/give.json';
 import mission from '../../data/mission.json';
-import './homepage.css';
 import house from '../../assets/asset-4.jpg';
-import YouTubeLivestreams from '../stream/recentSermons';
-import Nav from '../nav/nav';
+// styles
+import './homepage.css';
 
 export default function HomePage( props ) {
 
@@ -51,10 +53,14 @@ export default function HomePage( props ) {
                     ) ) }
                 </div>
             </div>
+
             
             <div className="sermon-section">
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </div>
+
+            <UpcomingEventsView />
+            
             <div className="giving-section">
                 <div className="image-container">
                     <img src={ house } alt="house"/>
