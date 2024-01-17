@@ -31,8 +31,8 @@
 }
 
 .nav p button {
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: bold;
     background: none;
     color: white;
     padding: 0.5em 1em;
@@ -106,7 +106,7 @@
         position: fixed;
         top: 0;
         right: -100vw; /* Hide off-screen */
-        width: 100vw; /* Adjust as needed */
+        width: 80vw; /* Adjust as needed */
         height: 100vh;
         background-color: darkgrey;
         flex-direction: column;

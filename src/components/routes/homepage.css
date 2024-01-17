@@ -3,13 +3,12 @@
     background-size: cover;
     object-fit: center;
     height: 100%;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     z-index: -2;
-    margin: 30px 20px 20px 20px;
+    /* margin: 30px 20px 20px 20px; */
 }
 
 .tint {
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,12 +23,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px 0 20px 0;
+    margin-top: 150px;
 }
 
 .tint h3 {
     color: #FFFFFF;
-    /* z-index: 1; */
 }
 
 .button-stack .main-btn-outline {
@@ -41,20 +39,19 @@
 }
 
 .blue-card {
-    margin: 2em;
     display: flex;
     justify-content: space-between;
 }
 
 .blue-card h3 {
-    color: #1F4AE3;
+    color: var(--dark-stuff);
 }
 
 .grid {
     width: 50%;
     padding: 3em;
     display: flex;
-    background-color: #EAEDF9;
+    background-color: var(--light-gray-stuff);
     border-radius: 15px;
     margin: 10px;
     flex-direction: column;
@@ -95,7 +92,6 @@
     align-items: center;
     text-align: left;
     padding: 4em;
-    /* background-color: red; */
 }
 
 .give p {
@@ -109,11 +105,8 @@
     align-items: left;
     padding: 0 5em 5em 5em;
     justify-content: center;
-}
-
-.sermon-section h3 {
-    color: #1F4AE3;
-}
+    color: var(--dark-stuff);
+};
 
 @media screen and ( max-width: 600px ) {
     .blue-card {
