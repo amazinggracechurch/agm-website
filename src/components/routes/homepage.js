@@ -61,15 +61,10 @@ export default function HomePage( props ) {
 
             {/* <UpcomingEventsView /> */}
             
-            <div className="giving-section">
-                <div className="image-container">
-                    <img src={ house } alt="house"/>
-                    <div className="overlay">
-                        <div className="give">
-                            <p>{ give.message }</p>
-                            <button onClick={ redirectToGiveUrl } className="main-btn-outline">Give</button>
-                        </div>
-                    </div>
+            <div className="giving-section" style={ { backgroundImage: `url( ${ house } )` } }>
+                <div className="darken">
+                    <p>{ give.message }</p>
+                    <button onClick={ redirectToGiveUrl } className="main-btn-outline">Give</button>
                 </div>
             </div>
             <Footer />
