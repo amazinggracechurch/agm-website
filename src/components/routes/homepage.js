@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../nav/nav';
 import Footer from '../footer/footer';
-import UpcomingEventsView from '../upcomingEvents/upcomingEventsView';
+// import UpcomingEventsView from '../upcomingEvents/upcomingEventsView';
 import YouTubeLivestreams from '../stream/recentSermons';
 import block from '../../data/church.json';
 import give from '../../data/give.json';
@@ -59,7 +59,7 @@ export default function HomePage( props ) {
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </div>
 
-            <UpcomingEventsView />
+            {/* <UpcomingEventsView /> */}
             
             <div className="giving-section">
                 <div className="image-container">
