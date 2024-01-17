@@ -3,9 +3,7 @@
     background-size: cover;
     object-fit: center;
     height: 100%;
-    /* border-radius: 15px; */
     z-index: -2;
-    /* margin: 30px 20px 20px 20px; */
 }
 
 .tint {
@@ -58,45 +56,30 @@
     justify-content: flex-start;
 }
 
-.giving-section .image-container {
-    position: relative;
-    display: inline-block;
-}
-
-.giving-section img {
-    width: calc(100vw - 60px);
-    height: 300px;
+.giving-section {
     margin: 20px;
     border-radius: 15px;
-    display: block;
+}
+  
+.giving-section p {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.giving-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 20px;
-    height: calc(100% - 40px);
-    width: 750px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 150px;
-    border-bottom-right-radius: 150px;
-    background-color: #4B5F85;
+.darken {
+    border-radius: 15px;
+    padding: 5em;
     display: flex;
-    align-items: center;
-}
-
-.give {
     flex-direction: column;
     align-items: center;
-    text-align: left;
-    padding: 4em;
-}
-
-.give p {
-    color: #fff;
-    justify-self: flex-start;
+    justify-content: center;
+    content: '';
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+    z-index: 1;
 }
 
 .sermon-section {
@@ -106,7 +89,7 @@
     padding: 0 5em 5em 5em;
     justify-content: center;
     color: var(--dark-stuff);
-};
+}
 
 @media screen and ( max-width: 600px ) {
     .blue-card {
@@ -115,11 +98,14 @@
     .giving-section .overlay {
         width: 50%;
     }
+    .button-stack {
+        display: grid;
+    }
     .button-stack .main-btn-outline {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         margin: 20px;
     }
 }
