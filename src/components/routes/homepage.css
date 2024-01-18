@@ -113,4 +113,7 @@
         position: relative;
         font-size: 1em;
     }
+    .sermon-section {
+        padding: 1em;
+    }
 }
