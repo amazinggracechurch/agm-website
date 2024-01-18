@@ -1,0 +1,58 @@
+.upcoming-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.upcoming-events h2 {
+    color: black;
+}
+
+.tempo {
+    background-color: #EAEDF9;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.white-container {
+    background-color: white;
+    min-width: 500px;
+    padding: 30px;
+    
+    .event-card {
+        display: flex;
+        align-items: center;
+        border-right: 1px solid rgb(157, 156, 156);
+        padding: 10px;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+        .date-tag {
+            background-color: var(--dark-stuff);
+            color: white;
+            border-radius: -150px;
+            padding: 10px;
+            margin: 0 20px 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            clip-path: polygon( 
+                0% 15%, 11% 10%,
+                15% 0%, 85% 0%,
+                91% 9%, 100% 15%,
+                100% 85%, 90% 88%,
+                85% 100%, 15% 100%,
+                11% 90%, 0% 85%
+            );
+
+        }
+    }
+
+    .event-card:hover {
+        transform: translateY(-5px);
+        transform: translateX(-5px);
+    }
+}

@@ -17,7 +17,7 @@ section {
 
 h1 {
     font-size: 48px;
-    color: #FFFFFF;
+    color: var(--light-gray-stuff);
     text-shadow: 0px 30px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -105,5 +105,11 @@ a {
 @media screen and ( max-width: 600px ) {
     .half-section {
         flex-direction: column; 
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
     }
 }
