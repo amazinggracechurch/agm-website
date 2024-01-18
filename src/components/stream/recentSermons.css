@@ -56,4 +56,8 @@
     .featured-video-container {
         height: 225px;
     }
+    .video-container {
+        height: 170px;
+        width: 270px;
+    }
 }
