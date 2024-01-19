@@ -30,7 +30,7 @@
     padding: 0 20px;
 }
 
-.nav p button {
+.nav p .nav-ref {
     font-size: 14px;
     font-weight: bold;
     background: none;
