@@ -5,8 +5,7 @@ import './footer.css';
 export default function Footer() {
   return (
     <div className="footer">
-      <h1>Amazing Grace Ministries</h1>
-      {/* <p>the headquarters of God in Minnesota</p> */}
+      {/* <h1>Amazing Grace Ministries</h1> */}
       <div className="footer-links">
         { links.map( ( { url, type } ) => (
           <a href={ url } key={ type }>{ type }</a>
@@ -19,7 +18,8 @@ export default function Footer() {
         <input type="email" placeholder="Subscribe To Our Newsletter" />
         <button> → </button>
       </div>
-      <p>Amazing grace Ministries | Copyright © 2022 All rights reserved</p>
+      <p>715 Edgerton Street, St. Paul, MN 55431</p>
+      <p>© 2022 Amazing grace Ministries | All rights reserved</p>
     </div>
   );
 }
