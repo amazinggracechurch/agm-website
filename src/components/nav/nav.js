@@ -24,7 +24,7 @@ export default function Nav() {
             <li><p><Link className="nav-ref" to={ '/' }>Ministries</Link></p></li>
             <li><p><Link className="nav-ref" to={ '/live-stream' }>Livestream</Link></p></li>
             <li><p><Link className="nav-ref" to={ '/' }>Resources</Link></p></li>
-            <li><p><Link className="nav-ref" to={ '/' }>Donate</Link></p></li>
+            <li><p><Link className="nav-ref" to={ '/' }>Giving</Link></p></li>
             <li><p><Link className="nav-ref" to={ '/' }>Contact Us</Link></p></li>
         </ul>
       </div>
