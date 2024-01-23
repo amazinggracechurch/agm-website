@@ -53,14 +53,14 @@
 }
 
 .footer .newsletter input[type="email"] {
-    padding: 0.5em;
+    padding: 1em;
     border: none;
     margin-right: 0.5em;
     border-radius: 4px;
 }
 
 .footer .newsletter button {
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     background-color: #1F4AE3;
     border: none;
     border-radius: 4px;
@@ -91,8 +91,7 @@
         padding: 2em 1em; /* Reduce padding on very small screens */
     }
 
-    .footer .newsletter button,
-    .footer .newsletter input[ type="email" ] {
-        width: 100%; /* Full width for small screens */
+    .footer .newsletter button {
+        margin-top: 10px;
     }
 }
