@@ -33,3 +33,9 @@
         transform: scale(0.95); /* Slightly scale down the selector on click */
     }
 }
+
+@media ( max-width: 600px ) {
+    .date-picker {
+        min-width: 50%;
+    }
+}
