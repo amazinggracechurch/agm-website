@@ -9,6 +9,12 @@
     color: black;
 }
 
+.section-title {
+    h3 {
+        padding-left: 80px;
+    }
+}
+
 .tempo {
     background-color: #EAEDF9;
     padding: 30px;
