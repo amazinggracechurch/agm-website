@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import App from './app';
 import Livestream from './components/routes/livestream/livestream';
+import About from './components/routes/about/about';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter( [
@@ -20,6 +21,10 @@ const router = createBrowserRouter( [
   {
     path: '/live-stream',
     element: <Livestream />,
+  },
+  {
+    path: '/about',
+    element: <About />,
   }
 ] );
 
