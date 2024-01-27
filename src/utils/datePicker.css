@@ -1,0 +1,35 @@
+.date-picker-container {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-picker {
+    min-width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--light-gray-stuff);
+    padding: 0.5em;
+    border-radius: 10px;
+    p {
+        color: var(--dark-stuff);
+    }
+    
+    .date-selector {
+        border-radius: 10px;
+        padding: 0 0.5em;
+        background-color: white;
+    }
+
+    /* Hover effect */
+    .date-selector:hover {
+        background-color: lightgray; /* Lighten the background on hover */
+    }
+
+    /* Active (click) effect */
+    .date-selector:active {
+        transform: scale(0.95); /* Slightly scale down the selector on click */
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../nav/nav';
 import Footer from '../footer/footer';
-// import UpcomingEventsView from '../upcomingEvents/upcomingEventsView';
+import UpcomingEvents from '../upcomingEvents/upcomingEvents';
 import YouTubeLivestreams from '../stream/recentSermons';
 import block from '../../data/church.json';
 import give from '../../data/give.json';
@@ -54,7 +54,9 @@ export default function HomePage( props ) {
                 </div>
             </div>
 
-            
+            <UpcomingEvents />
+
+
             <div className="sermon-section">
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </div>

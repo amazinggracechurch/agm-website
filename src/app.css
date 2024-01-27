@@ -12,6 +12,8 @@ body {
 :root {
     --dark-stuff: #1B1C1E;
     --light-gray-stuff: #F4F4F4;
+    --medium-gray-stuff: #6f7071;
+    --accent-color-orange: #E23E07;
   }
 
 section {
@@ -27,7 +29,7 @@ h1 {
 
 h2 {
     font-size: 36px;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 h3 {

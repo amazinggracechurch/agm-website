@@ -1,0 +1,51 @@
+.event-card-container {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-card {
+    padding: 1em;
+    /* remove this later */
+    background-color: white;
+    border: 1px solid var(--medium-gray-stuff);
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    background-color: #F4F4F4;
+    border: 1px solid white;
+}
+
+.event-date {
+    border-right: 1px solid var(--medium-gray-stuff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 1em 0 0;
+
+    h3 {
+        line-height: 1;
+        color: var(--medium-gray-stuff);
+    }
+}
+
+.event-details {
+    padding: 0 1em;
+
+    p {
+        color: var(--dark-stuff);
+    }
+}
+
+.current {
+    h3 {
+        color: var(--accent-color-orange);
+    }
+}
