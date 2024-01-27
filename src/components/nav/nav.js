@@ -20,7 +20,7 @@ export default function Nav() {
         </div>
         <ul className={ isMenuOpen ? 'active' : ''}>
             <li><p><Link className="nav-ref" to={ '/home' }>Home</Link></p></li>
-            <li><p><Link className="nav-ref" to={ '/' }>About Us</Link></p></li>
+            <li><p><Link className="nav-ref" to={ '/about' }>About Us</Link></p></li>
             <li><p><Link className="nav-ref" to={ '/' }>Ministries</Link></p></li>
             <li><p><Link className="nav-ref" to={ '/live-stream' }>Livestream</Link></p></li>
             <li><p><Link className="nav-ref" to={ '/' }>Resources</Link></p></li>
