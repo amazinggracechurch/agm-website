@@ -62,26 +62,35 @@ export default function UpcomingEvents() {
     }, [ selectedMonth ] );
 
     useEffect( () => {
-        // Determine the first day of the selected month
-        const firstDayOfMonth = new Date( new Date().getFullYear(), selectedMonth, 1 );
+        const currentDate = new Date();
+        const currentMonth = currentDate.getMonth();
+        const currentYear = currentDate.getFullYear();
 
-        // Adjust to the start of the current or future week
-        const startOfWeek = new Date( firstDayOfMonth );
-        startOfWeek.setDate( startOfWeek.getDate() - startOfWeek.getDay() + ( weekOffset * 7 ) );
+        // Adjust start date based on the selected month
+        let startDate;
+        if ( selectedMonth === currentMonth ) {
+            // Start from today for the current month
+            startDate = currentDate;
+        } else {
+            // Start from the first of the month for future months
+            startDate = new Date( currentYear, selectedMonth, 1 ); 
+        }
 
-        const endOfWeek = new Date( startOfWeek );
-        endOfWeek.setDate( endOfWeek.getDate() + 7 );
+        const endDate = new Date( startDate );
+        endDate.setDate( endDate.getDate() + ( 7 * ( weekOffset + 1 ) ) );
 
-        const weekEvents = events.filter( event => {
+
+        const rangeEvents = events.filter( event => {
             const eventDate = new Date( event.year, event.month, event.day );
-            return eventDate >= startOfWeek && eventDate < endOfWeek;
+            return eventDate >= startDate && eventDate < endDate;
         } );
 
-        setDisplayedEvents( weekEvents );
+        setDisplayedEvents( rangeEvents );
     }, [ events, weekOffset, selectedMonth ] );
 
     const handleMonthChange = ( newMonth ) => {
         setSelectedMonth( newMonth );
+        setWeekOffset( 0 );
     };
 
     const showMoreEvents = () => {
@@ -89,7 +98,7 @@ export default function UpcomingEvents() {
     };
     
     return (
-        <div>
+        <div className="upcoming-events-container">
             <div className="section-title">
                 <h3>Upcoming Events</h3>
             </div>
