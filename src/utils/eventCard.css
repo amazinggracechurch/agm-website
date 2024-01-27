@@ -49,3 +49,9 @@
         color: var(--accent-color-orange);
     }
 }
+
+@media ( max-width: 600px ) {
+    .event-card {
+        width: 80%;
+    }
+}
