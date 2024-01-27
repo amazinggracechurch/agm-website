@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Nav from '../nav/nav';
 import Footer from '../footer/footer';
 import UpcomingEvents from '../upcomingEvents/upcomingEvents';
@@ -11,6 +11,14 @@ import house from '../../assets/asset-4.jpg';
 import './homepage.css';
 
 export default function HomePage( props ) {
+
+    const upcomingEventsRef = useRef( null );
+
+    const scrollToUpcomingEvents = () => {
+        if ( upcomingEventsRef.current ) {
+            upcomingEventsRef.current.scrollIntoView( { behavior: 'smooth' } );
+        }
+    };
 
     const parts = block.nameUppercase.split( ' GRACE ' );
 
@@ -37,7 +45,7 @@ export default function HomePage( props ) {
                         </span>
                         <div className="button-stack">
                             <button className="main-btn-filled">Latest Sermon</button>
-                            <button className="main-btn-outline">Upcoming events</button>
+                            <button className="main-btn-outline" onClick={ scrollToUpcomingEvents }>Upcoming events</button>
                         </div>
                     </div>
                 </div>
@@ -54,14 +62,14 @@ export default function HomePage( props ) {
                 </div>
             </div>
 
-            <UpcomingEvents />
+            <div ref={ upcomingEventsRef }>
+                <UpcomingEvents />
+            </div>
 
 
             <div className="sermon-section">
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </div>
-
-            {/* <UpcomingEventsView /> */}
             
             <div className="giving-section" style={ { backgroundImage: `url( ${ house } )` } }>
                 <div className="darken">
