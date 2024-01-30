@@ -62,13 +62,13 @@ export default function HomePage( props ) {
                 </div>
             </div>
 
-            <div ref={ upcomingEventsRef }>
-                <UpcomingEvents />
-            </div>
-
 
             <div className="sermon-section">
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
+            </div>
+
+            <div ref={ upcomingEventsRef }>
+                <UpcomingEvents />
             </div>
             
             <div className="giving-section" style={ { backgroundImage: `url( ${ house } )` } }>
