@@ -28,7 +28,7 @@ export default function EventCard( props ) {
                 </div>
 
                 <div className="event-details">
-                    <p>{ title }</p>
+                    <h4>{ title }</h4>
                     <p>{ time }</p>
                 </div>
             </div>
