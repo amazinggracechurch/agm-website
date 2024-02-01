@@ -27,7 +27,7 @@ export default function DatePicker( { onMonthChange } ) {
         <div className="date-picker-container">
             <div className="date-picker">
                 <div className="date-selector" onClick={ prevMonth }><p>{ '<' }</p></div>
-                <div><p>{ monthIndex === currentMonthIndex ? 'Current Month' : months[ monthIndex ] }</p></div>
+                <div><p>{ months[ monthIndex ] }</p></div>
                 <div className="date-selector" onClick={ nextMonth }><p>{ '>' }</p></div>
             </div>
         </div>

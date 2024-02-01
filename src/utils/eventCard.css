@@ -32,7 +32,7 @@
 
     h3 {
         line-height: 1;
-        color: var(--medium-gray-stuff);
+        /* color: var(--medium-gray-stuff); */
     }
 }
 
@@ -40,7 +40,7 @@
     padding: 0 1em;
 
     p {
-        color: var(--dark-stuff);
+        color: var(--medium-gray-stuff);
     }
 }
 
