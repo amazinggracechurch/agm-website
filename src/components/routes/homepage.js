@@ -13,10 +13,11 @@ import './homepage.css';
 export default function HomePage( props ) {
 
     const upcomingEventsRef = useRef( null );
+    const latestSermonSection = useRef( null );
 
-    const scrollToUpcomingEvents = () => {
-        if ( upcomingEventsRef.current ) {
-            upcomingEventsRef.current.scrollIntoView( { behavior: 'smooth' } );
+    const scrollToSection = ( ref ) => {
+        if ( ref.current ) {
+            ref.current.scrollIntoView( { behavior: 'smooth' } );
         }
     };
 
@@ -44,8 +45,8 @@ export default function HomePage( props ) {
                             <h3>{ block.locationUppercase }</h3>
                         </span>
                         <div className="button-stack">
-                            <button className="main-btn-filled">Latest Sermon</button>
-                            <button className="main-btn-outline" onClick={ scrollToUpcomingEvents }>Upcoming events</button>
+                            <button className="main-btn-filled" onClick={ () => scrollToSection( latestSermonSection ) }>Latest Sermon</button>
+                            <button className="main-btn-outline" onClick={ () => scrollToSection( upcomingEventsRef ) }>Upcoming events</button>
                         </div>
                     </div>
                 </div>
@@ -63,7 +64,7 @@ export default function HomePage( props ) {
             </div>
 
 
-            <div className="sermon-section">
+            <div className="sermon-section" ref={ latestSermonSection }>
                 <YouTubeLivestreams apiKey={ process.env.REACT_APP_API_KEY } channelId={ process.env.REACT_APP_CHANNEL_ID }/>
             </div>
 
